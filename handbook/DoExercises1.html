@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>leetCode刷题（续） | 前端学习@小浪努力学前端</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="小浪努力学前端之旅">
+    
+    <link rel="preload" href="/Front-end-notes/assets/css/0.styles.102086c6.css" as="style"><link rel="preload" href="/Front-end-notes/assets/js/app.fce70604.js" as="script"><link rel="preload" href="/Front-end-notes/assets/js/3.b45189e7.js" as="script"><link rel="preload" href="/Front-end-notes/assets/js/1.62c193a0.js" as="script"><link rel="preload" href="/Front-end-notes/assets/js/32.391c87a8.js" as="script"><link rel="prefetch" href="/Front-end-notes/assets/js/10.6cc78502.js"><link rel="prefetch" href="/Front-end-notes/assets/js/11.458a0b3d.js"><link rel="prefetch" href="/Front-end-notes/assets/js/12.95ba9ad9.js"><link rel="prefetch" href="/Front-end-notes/assets/js/13.3a02c30b.js"><link rel="prefetch" href="/Front-end-notes/assets/js/14.323ca1f4.js"><link rel="prefetch" href="/Front-end-notes/assets/js/15.6056f1f6.js"><link rel="prefetch" href="/Front-end-notes/assets/js/16.fc2feb67.js"><link rel="prefetch" href="/Front-end-notes/assets/js/17.ceaa1fd9.js"><link rel="prefetch" href="/Front-end-notes/assets/js/18.2d178623.js"><link rel="prefetch" href="/Front-end-notes/assets/js/19.b128f84d.js"><link rel="prefetch" href="/Front-end-notes/assets/js/20.0dc80967.js"><link rel="prefetch" href="/Front-end-notes/assets/js/21.be333256.js"><link rel="prefetch" href="/Front-end-notes/assets/js/22.d4b56230.js"><link rel="prefetch" href="/Front-end-notes/assets/js/23.aadd69ba.js"><link rel="prefetch" href="/Front-end-notes/assets/js/24.b819f4f9.js"><link rel="prefetch" href="/Front-end-notes/assets/js/25.6ac4bf48.js"><link rel="prefetch" href="/Front-end-notes/assets/js/26.52426858.js"><link rel="prefetch" href="/Front-end-notes/assets/js/27.f9af1eb3.js"><link rel="prefetch" href="/Front-end-notes/assets/js/28.ba4a0075.js"><link rel="prefetch" href="/Front-end-notes/assets/js/29.9c07955a.js"><link rel="prefetch" href="/Front-end-notes/assets/js/30.042e1c76.js"><link rel="prefetch" href="/Front-end-notes/assets/js/31.f58210b8.js"><link rel="prefetch" href="/Front-end-notes/assets/js/33.31ce1fc3.js"><link rel="prefetch" href="/Front-end-notes/assets/js/34.158603c0.js"><link rel="prefetch" href="/Front-end-notes/assets/js/35.2b343ddd.js"><link rel="prefetch" href="/Front-end-notes/assets/js/36.bc27222b.js"><link rel="prefetch" href="/Front-end-notes/assets/js/37.6e382158.js"><link rel="prefetch" href="/Front-end-notes/assets/js/38.69e339d8.js"><link rel="prefetch" href="/Front-end-notes/assets/js/39.f62448eb.js"><link rel="prefetch" href="/Front-end-notes/assets/js/4.769817e4.js"><link rel="prefetch" href="/Front-end-notes/assets/js/40.969f7bb7.js"><link rel="prefetch" href="/Front-end-notes/assets/js/41.bba09bbb.js"><link rel="prefetch" href="/Front-end-notes/assets/js/42.2a5c9752.js"><link rel="prefetch" href="/Front-end-notes/assets/js/43.6c64a210.js"><link rel="prefetch" href="/Front-end-notes/assets/js/44.5bf91ad0.js"><link rel="prefetch" href="/Front-end-notes/assets/js/45.ca36ffa1.js"><link rel="prefetch" href="/Front-end-notes/assets/js/46.a38594e4.js"><link rel="prefetch" href="/Front-end-notes/assets/js/47.f7d12bf2.js"><link rel="prefetch" href="/Front-end-notes/assets/js/48.eb22b960.js"><link rel="prefetch" href="/Front-end-notes/assets/js/49.62394b38.js"><link rel="prefetch" href="/Front-end-notes/assets/js/5.c118bdde.js"><link rel="prefetch" href="/Front-end-notes/assets/js/50.8e98f317.js"><link rel="prefetch" href="/Front-end-notes/assets/js/51.dc86cabf.js"><link rel="prefetch" href="/Front-end-notes/assets/js/52.cb455536.js"><link rel="prefetch" href="/Front-end-notes/assets/js/6.484272e5.js"><link rel="prefetch" href="/Front-end-notes/assets/js/7.76f986b7.js"><link rel="prefetch" href="/Front-end-notes/assets/js/8.6a620588.js"><link rel="prefetch" href="/Front-end-notes/assets/js/9.39185153.js">
+    <link rel="stylesheet" href="/Front-end-notes/assets/css/0.styles.102086c6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container" data-v-1aefc0b4><div data-v-1aefc0b4><div id="loader-wrapper" class="loading-wrapper" data-v-d48f4d20 data-v-1aefc0b4 data-v-1aefc0b4><div class="loader-main" data-v-d48f4d20><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div><div data-v-d48f4d20></div></div> <!----> <!----></div> <div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>前端学习@小浪努力学前端</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>小浪努力学前端之旅</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-1aefc0b4><header class="navbar" data-v-1aefc0b4><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/Front-end-notes/" class="home-link router-link-active"><!----> <span class="site-name">前端学习@小浪努力学前端</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/Front-end-notes/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      小浪前端博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/LianTianNo1" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4098610193243789/posts" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-1aefc0b4></div> <aside class="sidebar" data-v-1aefc0b4><div class="personal-info-wrapper" data-v-39576ba9 data-v-1aefc0b4><!----> <!----> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>23</h3> <h6 data-v-39576ba9>文章</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>0</h3> <h6 data-v-39576ba9>标签</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/Front-end-notes/" class="nav-link"><i class="undefined"></i>
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="undefined"></i>
+      小浪前端博客
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://github.com/LianTianNo1" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://juejin.cn/user/4098610193243789/posts" target="_blank" rel="noopener noreferrer" class="nav-link external"><i class="undefined"></i>
+  掘金
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav> <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/Front-end-notes/" class="sidebar-heading clickable router-link-active"><span>🥏欢迎🥏</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Front-end-notes/" aria-current="page" class="sidebar-link">🥚前言</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/Front-end-notes/algorithm/start" class="sidebar-heading clickable"><span>算法学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Front-end-notes/algorithm/start.html" class="sidebar-link">🦁开始</a></li><li><a href="/Front-end-notes/algorithm/struct.html" class="sidebar-link">🐇基础数据结构</a></li><li><a href="/Front-end-notes/algorithm/algorithm.html" class="sidebar-link">🦀解题技巧与必会算法</a></li><li><a href="/Front-end-notes/algorithm/leetcode.html" class="sidebar-link">🐈leetCode必刷题</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/Front-end-notes/handbook/Webbase" class="sidebar-heading clickable open"><span>基础学习</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Front-end-notes/handbook/Webbase.html" class="sidebar-link">🐰Web基础</a></li><li><a href="/Front-end-notes/handbook/ComputerNetwork.html" class="sidebar-link">🐣计算机网络</a></li><li><a href="/Front-end-notes/handbook/StudyGit.html" class="sidebar-link">🐍必会的Git</a></li><li><a href="/Front-end-notes/handbook/LearningAlgorithm.html" class="sidebar-link">🐠小浪学习算法笔记</a></li><li><a href="/Front-end-notes/handbook/DoExercises.html" class="sidebar-link">🐋leetCode刷题1</a></li><li><a href="/Front-end-notes/handbook/DoExercises1.html" aria-current="page" class="active sidebar-link">🐋leetCode刷题2</a></li><li><a href="/Front-end-notes/handbook/ReviewNodeJS.html" class="sidebar-link">⏲小浪复习NodeJS框架</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/Front-end-notes/collection/1" class="sidebar-heading clickable"><span>收藏的其他大佬文章</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Front-end-notes/collection/1.html" class="sidebar-link">🐇前端面试复习计划</a></li><li><a href="/Front-end-notes/collection/2.html" class="sidebar-link">🏆最全的手写JS面试题</a></li><li><a href="/Front-end-notes/collection/3.html" class="sidebar-link">🎲最全的TypeScript学习指南</a></li><li><a href="/Front-end-notes/collection/4.html" class="sidebar-link">⚾前端硬核面试专题</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/Front-end-notes/beautyAlgorithms/1" class="sidebar-heading clickable"><span>猫哥的技术博客：JavaScript 数据结构与算法之美</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Front-end-notes/beautyAlgorithms/1.html" class="sidebar-link">⚡时间和空间复杂度</a></li><li><a href="/Front-end-notes/beautyAlgorithms/2.html" class="sidebar-link">⚡线性表（数组、队列、栈、链表）</a></li><li><a href="/Front-end-notes/beautyAlgorithms/3.html" class="sidebar-link">⚡实现一个前端路由，如何实现浏览器的前进与后退 ？</a></li><li><a href="/Front-end-notes/beautyAlgorithms/4.html" class="sidebar-link">⚡栈内存与堆内存 、浅拷贝与深拷贝</a></li><li><a href="/Front-end-notes/beautyAlgorithms/5.html" class="sidebar-link">⚡递归</a></li><li><a href="/Front-end-notes/beautyAlgorithms/6.html" class="sidebar-link">⚡非线性表（树、堆）</a></li><li><a href="/Front-end-notes/beautyAlgorithms/7.html" class="sidebar-link">⚡冒泡排序、选择排序、插入排序</a></li><li><a href="/Front-end-notes/beautyAlgorithms/8.html" class="sidebar-link">⚡归并排序、快速排序、希尔排序、堆排序</a></li><li><a href="/Front-end-notes/beautyAlgorithms/9.html" class="sidebar-link">⚡计数排序、桶排序、基数排序</a></li><li><a href="/Front-end-notes/beautyAlgorithms/10.html" class="sidebar-link">⚡十大经典排序算法汇总</a></li><li><a href="/Front-end-notes/beautyAlgorithms/11.html" class="sidebar-link">⚡GitHub 上 170K+ Star 的前端学习的数据结构与算法项目</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/Front-end-notes/studyeveryday/study2022-1" class="sidebar-heading clickable"><span>群友每日一题</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Front-end-notes/studyeveryday/study2022-1.html" class="sidebar-link">🚀2022年1月</a></li><li><a href="/Front-end-notes/studyeveryday/study2022-2.html" class="sidebar-link">🙀2022年2月</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/Front-end-notes/offerShare/1" class="sidebar-heading clickable"><span>三位大佬最强面试资源</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/Front-end-notes/offerShare/1.html" class="sidebar-link">📙1 前端面试准备</a></li><li><a href="/Front-end-notes/offerShare/2.html" class="sidebar-link">🔰2 程序员面试软技能</a></li><li><a href="/Front-end-notes/offerShare/3.html" class="sidebar-link">🔱3 offer收割机之HTML篇</a></li><li><a href="/Front-end-notes/offerShare/4.html" class="sidebar-link">🔮4 offer收割机之CSS篇</a></li><li><a href="/Front-end-notes/offerShare/5.html" class="sidebar-link">🔥5 offer收割机之JavaScript篇</a></li><li><a href="/Front-end-notes/offerShare/6.html" class="sidebar-link">🔔6 offer收割机之性能优化篇</a></li><li><a href="/Front-end-notes/offerShare/7.html" class="sidebar-link">🔍7 offer收割机之前端工程化篇</a></li><li><a href="/Front-end-notes/offerShare/8.html" class="sidebar-link">🔑8 offer收割机之计算机网络篇</a></li><li><a href="/Front-end-notes/offerShare/9.html" class="sidebar-link">🔓9 offer收割机之浏览器原理篇</a></li><li><a href="/Front-end-notes/offerShare/10.html" class="sidebar-link">📻10 offer收割机之手写代码篇</a></li><li><a href="/Front-end-notes/offerShare/11.html" class="sidebar-link">📷11 offer收割机之代码输出篇</a></li><li><a href="/Front-end-notes/offerShare/12.html" class="sidebar-link">📦12 LeetCode面试常考题目</a></li><li><a href="/Front-end-notes/offerShare/13.html" class="sidebar-link">📛13 offer收割机之Vue篇</a></li></ul></section></li></ul> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-1aefc0b4><h3 class="title" data-v-25ba6db2 data-v-25ba6db2></h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><!---->
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-1aefc0b4><main class="page"><section><div class="page-title"><h1 class="title">leetCode刷题（续）</h1> <div data-v-f875f3fc><!----> <!----> <!----> <!----></div></div> <div class="theme-reco-content content__default"><h1 id="leetcode刷题-续"><a href="#leetcode刷题-续" class="header-anchor">#</a> leetCode刷题（续）</h1> <h2 id="剑指offer"><a href="#剑指offer" class="header-anchor">#</a> 剑指Offer</h2> <h3 id="剑指-offer-42-连续子数组的最大和"><a href="#剑指-offer-42-连续子数组的最大和" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 42. 连续子数组的最大和<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-ba extra-class"><pre class="language-text"><code>输入一个整型数组，数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+
+要求时间复杂度为O(n)。
+
+ 
+
+示例1:
+
+输入: nums = [-2,1,-3,4,-1,2,1,-5,4]
+输出: 6
+解释: 连续子数组 [4,-1,2,1] 的和最大，为 6。
+ 
+
+提示：
+
+1 &lt;= arr.length &lt;= 10^5
+-100 &lt;= arr[i] &lt;= 100
+</code></pre></div><blockquote><p>自己写的</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">maxSubArray</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> dp <span class="token operator">=</span> <span class="token punctuation">[</span>nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    max <span class="token operator">=</span> nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    max <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> max<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> max
+<span class="token punctuation">}</span>
+
+</code></pre></div><blockquote><p>大佬写的</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code>解题核心：正贡献、负贡献
+对于 <span class="token punctuation">[</span>B, A, C<span class="token punctuation">]</span> 连续三个数
+
+什么是负贡献？
+对于新的数A假设是10，如果前面的一个数B是-2，那么前面的B就会对新的A产生了负贡献，让他变成了8，那么就舍弃加B，直接重新从A开始加起，因为此时是最大的
+
+什么是正贡献？
+对于新的数C假设是5，如果前面的一个数A是10，那么前面的A就会对新的C产生了正贡献，让他变成了15，所以就要加埋C，此时和15会比原本的A更大
+
+理清楚正贡献与负贡献后，下面开始该题的讲解：
+
+记录第n位连续数组最大和时，先判断前一位记录的最大和是正的还是负的
+
+如果是负的，那加上新加这个数，肯定会比新加这个数要小，即对新的数产生了负贡献，那么就不要加这个负的前一位记录的最大和，直接使用新的数作为数组初始位即可
+
+如果是正的，那么是正贡献，加上新的数肯定会比新的数要大，可以赋值
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">maxSubArray</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// dp[n] = dp[n - 1] + nums[n] 如果前面的连续子数组和大于0，   dp[n] = nums[n] 如果前面的连续子数组和小于0，</span>
+
+    <span class="token keyword">let</span> i<span class="token punctuation">,</span> len <span class="token operator">=</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">,</span> dp <span class="token operator">=</span> <span class="token punctuation">[</span>nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">,</span> max <span class="token operator">=</span> nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 前面的 连续数组和是负数，做出的是负贡献，如果是正数，做出的是正贡献，才进行连续赋值</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 记录最大和</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;</span> max<span class="token punctuation">)</span>
+            max <span class="token operator">=</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> max<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>空间优化</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">maxSubArray</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> i<span class="token punctuation">,</span> len <span class="token operator">=</span> nums<span class="token punctuation">.</span>length<span class="token punctuation">,</span> max <span class="token operator">=</span> nums<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 只有正贡献，才加上前面的数</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">&gt;</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// 记录最大和</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&gt;</span> max<span class="token punctuation">)</span>
+            max <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> max<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-47-礼物的最大价值"><a href="#剑指-offer-47-礼物的最大价值" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 47. 礼物的最大价值<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-bash extra-class"><pre class="language-bash"><code>在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 <span class="token number">0</span>）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？
+
+
+示例 <span class="token number">1</span>:
+
+输入: 
+<span class="token punctuation">[</span>
+  <span class="token punctuation">[</span><span class="token number">1,3</span>,1<span class="token punctuation">]</span>,
+  <span class="token punctuation">[</span><span class="token number">1,5</span>,1<span class="token punctuation">]</span>,
+  <span class="token punctuation">[</span><span class="token number">4,2</span>,1<span class="token punctuation">]</span>
+<span class="token punctuation">]</span>
+输出: <span class="token number">12</span>
+解释: 路径 <span class="token number">1</span>→3→5→2→1 可以拿到最多价值的礼物
+ 
+
+提示：
+
+<span class="token number">0</span> <span class="token operator">&lt;</span> grid.length <span class="token operator">&lt;=</span> <span class="token number">200</span>
+<span class="token number">0</span> <span class="token operator">&lt;</span> grid<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>.length <span class="token operator">&lt;=</span> <span class="token number">200</span>
+</code></pre></div><blockquote><p>思路</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code>根据题目说明，易得某单元格只可能从上边单元格或左边单元格到达。
+
+对于第一行的单元格，肯定只能从左边过来
+对于第一列的单元格，肯定只能从上边过来
+对于不是第一行或第一列的单元格，是从上边或左边大的那个单元格过来
+设 f<span class="token punctuation">(</span>i, j<span class="token punctuation">)</span> 为从棋盘左上角走至单元格 <span class="token punctuation">(</span>i ,j<span class="token punctuation">)</span> 的礼物最大累计价值
+易得到以下递推关系：
+f<span class="token punctuation">(</span>i,j<span class="token punctuation">)</span> 等于 f<span class="token punctuation">(</span>i,j-1<span class="token punctuation">)</span> 和 f<span class="token punctuation">(</span>i-1,j<span class="token punctuation">)</span> 中的较大值加上当前单元格礼物价值 grid<span class="token punctuation">(</span>i,j<span class="token punctuation">)</span>。
+
+即
+f<span class="token punctuation">(</span>i,j<span class="token punctuation">)</span> <span class="token operator">=</span> grid<span class="token punctuation">(</span>i,j<span class="token punctuation">)</span> + Math.max<span class="token punctuation">(</span>f<span class="token punctuation">(</span>i, j − <span class="token number">1</span><span class="token punctuation">)</span>, f<span class="token punctuation">(</span>i − <span class="token number">1</span>, j<span class="token punctuation">))</span>
+
+作者：smooth-b
+链接：https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/solution/jian-zhi-offer-47-li-wu-de-zui-da-jie-zh-8pun/
+来源：力扣（LeetCode）
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+</code></pre></div><blockquote><p>动态规划</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[][]} grid
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">maxValue</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">grid</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// dp[n] = dp[n - 1] + 上边或左边的价值大的那个</span>
+    <span class="token keyword">let</span> i<span class="token punctuation">,</span> j<span class="token punctuation">,</span> m <span class="token operator">=</span> grid<span class="token punctuation">.</span>length<span class="token punctuation">,</span> n <span class="token operator">=</span> grid<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">,</span> dp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>m<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>n<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">;</span> <span class="token comment">// m是有多少行，n是有多少列</span>
+    <span class="token comment">// 初始化dp第一值</span>
+    dp<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">=</span> grid<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>i <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 第一行，肯定是从左边移动过来的</span>
+                dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>j <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 第一列，肯定是从上边移动过来的</span>
+                dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 除了第一行第一列以外的元素</span>
+                dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> dp<span class="token punctuation">[</span>m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>空间优化，在原来的二维数组中改变</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[][]} grid
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">maxValue</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">grid</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// dp[n] = dp[n - 1] + 上边或左边的价值大的那个</span>
+    <span class="token keyword">let</span> i<span class="token punctuation">,</span> j<span class="token punctuation">,</span> m <span class="token operator">=</span> grid<span class="token punctuation">.</span>length<span class="token punctuation">,</span> n <span class="token operator">=</span> grid<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span><span class="token comment">// m是有多少行，n是有多少列</span>
+    <span class="token keyword">for</span><span class="token punctuation">(</span>i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> m<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span><span class="token punctuation">(</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> j <span class="token operator">&lt;</span> n<span class="token punctuation">;</span> j<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>i <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>j<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">continue</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>i <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 第一行，肯定是从左边移动过来的</span>
+                grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>j <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 第一列，肯定是从上边移动过来的</span>
+                grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> grid<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+                <span class="token comment">// 除了第一行第一列以外的元素</span>
+                grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">+</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>grid<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> grid<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span>j <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> grid<span class="token punctuation">[</span>m <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-46-把数字翻译成字符串"><a href="#剑指-offer-46-把数字翻译成字符串" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 46. 把数字翻译成字符串<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-js extra-class"><pre class="language-js"><code>给定一个数字，我们按照如下规则把它翻译为字符串：<span class="token number">0</span> 翻译成 “a” ，<span class="token number">1</span> 翻译成 “b”，……，<span class="token number">11</span> 翻译成 “l”，……，<span class="token number">25</span> 翻译成 “z”。一个数字可能有多个翻译。请编程实现一个函数，用来计算一个数字有多少种不同的翻译方法。
+
+ 
+
+示例 <span class="token number">1</span><span class="token operator">:</span>
+
+<span class="token literal-property property">输入</span><span class="token operator">:</span> <span class="token number">12258</span>
+<span class="token literal-property property">输出</span><span class="token operator">:</span> <span class="token number">5</span>
+<span class="token literal-property property">解释</span><span class="token operator">:</span> <span class="token number">12258</span>有<span class="token number">5</span>种不同的翻译，分别是<span class="token string">&quot;bccfi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;bwfi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;bczi&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;mcfi&quot;</span>和<span class="token string">&quot;mzi&quot;</span>
+</code></pre></div><blockquote><p>使用动态规划来解题：</p></blockquote> <p>dp[i]含义：0~i-1范围的数字，能翻译的个数
+递推公式：i-1和i-2若能被翻译，则dp[i] = dp[i - 1] + dp[i - 2]；否则，dp[i] = dp[i - 1]
+dp数组初始化：dp[0]代表空字符串，当然只有1种。dp[1]代表str[0]，单个字符，当然也只有1种，所以dp = [1, 1]
+当前dp[i]依赖于之前项，所以从前向后遍历</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">translateNum</span> <span class="token operator">=</span> <span class="token parameter">num</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> str <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>num<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> dp <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> len <span class="token operator">=</span> str<span class="token punctuation">.</span>length<span class="token punctuation">;</span>
+    <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> len <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> preNum <span class="token operator">=</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>str<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">+</span> str<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>preNum <span class="token operator">&gt;=</span> <span class="token number">10</span> <span class="token operator">&amp;&amp;</span> preNum <span class="token operator">&lt;=</span> <span class="token number">25</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> dp<span class="token punctuation">[</span>len<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>写法二 这样效率高</p></blockquote> <p>解题思路
+假设 dp[i] 表示，前 i 个字符，翻译的可能数，那么</p> <p>如果第 i 个字符，单独翻译，则 count = dp[i-1]
+如果第 i 个字符，联合第 i-1 个字符，则 count = dp[i-2]
+但是第二中情况是有条件的，即 [i-1][i] 组成的数字 n 要满足以下条件</p> <p>n &gt;= 10
+n &lt;= 25
+代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+
+ * @param {number} num
+ * @return {number}
+   */</span>
+   <span class="token keyword">var</span> <span class="token function-variable function">translateNum</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">num</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token comment">// dp[i] = dp[i-1] + dp[i-2];</span>
+   <span class="token comment">// 如果num[i-1] 是1，或则 num[i-1] == 2 且 num[i] &lt;= 5;</span>
+   <span class="token comment">// 则表示 存在第二中翻译可能</span>
+   <span class="token keyword">if</span><span class="token punctuation">(</span>num <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+   <span class="token keyword">let</span> numS <span class="token operator">=</span> num<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">let</span> dp <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Array</span><span class="token punctuation">(</span>numS<span class="token punctuation">.</span>length <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">,</span> len <span class="token operator">=</span> numS<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">&lt;=</span> len<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> dp<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span>
+       <span class="token keyword">if</span><span class="token punctuation">(</span>numS<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'1'</span> <span class="token operator">||</span> <span class="token punctuation">(</span>numS<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token string">'2'</span> <span class="token operator">&amp;&amp;</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>numS<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">&lt;=</span> <span class="token number">5</span><span class="token punctuation">)</span> <span class="token punctuation">)</span> <span class="token punctuation">{</span>
+           dp<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">+=</span> dp<span class="token punctuation">[</span>i<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">]</span>
+       <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+   <span class="token keyword">return</span> dp<span class="token punctuation">[</span>numS<span class="token punctuation">.</span>length<span class="token punctuation">]</span>
+   <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="剑指-offer-48-最长不含重复字符的子字符串"><a href="#剑指-offer-48-最长不含重复字符的子字符串" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/zui-chang-bu-han-zhong-fu-zi-fu-de-zi-zi-fu-chuan-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 48. 最长不含重复字符的子字符串<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <blockquote><p>滑动窗口</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {string} s
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">lengthOfLongestSubstring</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>s<span class="token punctuation">.</span>length <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token number">0</span>
+  <span class="token keyword">const</span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+  <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    maxLength <span class="token operator">=</span> <span class="token number">0</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>right <span class="token operator">&lt;</span> s<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>set<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>right<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+      maxLength <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>maxLength<span class="token punctuation">,</span> set<span class="token punctuation">.</span>size<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      set<span class="token punctuation">.</span><span class="token function">delete</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>left<span class="token operator">++</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> maxLength
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-18-删除链表的节点"><a href="#剑指-offer-18-删除链表的节点" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/shan-chu-lian-biao-de-jie-dian-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 18. 删除链表的节点<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} head
+ * @param {number} val
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">deleteNode</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> p <span class="token operator">=</span> head
+  <span class="token keyword">if</span><span class="token punctuation">(</span>p<span class="token punctuation">.</span>val <span class="token operator">===</span> val<span class="token punctuation">)</span><span class="token keyword">return</span> p<span class="token punctuation">.</span>next
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">.</span>next <span class="token operator">&amp;&amp;</span> p<span class="token punctuation">.</span>next<span class="token punctuation">.</span>val <span class="token operator">===</span> val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      p<span class="token punctuation">.</span>next <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next
+      <span class="token keyword">break</span>
+    <span class="token punctuation">}</span>
+    p <span class="token operator">=</span> p<span class="token punctuation">.</span>next
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> head
+<span class="token punctuation">}</span>
+
+</code></pre></div><blockquote><p>其他写的</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">deleteNode</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> newHead <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+    newHead<span class="token punctuation">.</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> node <span class="token operator">=</span> newHead<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>node <span class="token operator">&amp;&amp;</span> node<span class="token punctuation">.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>node<span class="token punctuation">.</span>next<span class="token punctuation">.</span>val <span class="token operator">===</span> val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            node<span class="token punctuation">.</span>next <span class="token operator">=</span> node<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        node <span class="token operator">=</span> node<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> newHead<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>感觉他们的用时和空间都不行</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> <span class="token function-variable function">deleteNode</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> val</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 定义虚拟节点</span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 虚拟节点连接到head</span>
+    res<span class="token punctuation">.</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+    <span class="token comment">// 定义p指针，最开始指向虚拟节点</span>
+    <span class="token keyword">let</span> p <span class="token operator">=</span> res<span class="token punctuation">;</span>
+    <span class="token comment">// 遍历链表</span>
+    <span class="token keyword">while</span> <span class="token punctuation">(</span>p<span class="token operator">?.</span>next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 如果下一个值等于val，则删除下一个值</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>p<span class="token punctuation">.</span>next<span class="token punctuation">.</span>val <span class="token operator">===</span> val<span class="token punctuation">)</span> p<span class="token punctuation">.</span>next <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        p <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="剑指-offer-22-链表中倒数第k个节点"><a href="#剑指-offer-22-链表中倒数第k个节点" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/lian-biao-zhong-dao-shu-di-kge-jie-dian-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 22. 链表中倒数第k个节点<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <blockquote><p>自己用栈</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} head
+ * @param {number} k
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">getKthFromEnd</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> p <span class="token operator">=</span> head
+  <span class="token keyword">const</span> stack <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    stack<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span>
+    p <span class="token operator">=</span> p<span class="token punctuation">.</span>next
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> stack<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token operator">-</span>k<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>差值法</p></blockquote> <p>解题思路
+先遍历一次获得链表长度
+然后第二次遍历，到指定位置直接返回 p及后面的链表结点即可
+代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">getKthFromEnd</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> p <span class="token operator">=</span> head<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> sum <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>p<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        sum<span class="token operator">++</span><span class="token punctuation">;</span>
+        p <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    p <span class="token operator">=</span> head<span class="token punctuation">;</span>
+    <span class="token keyword">let</span> now <span class="token operator">=</span> sum <span class="token operator">-</span> k<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>now<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        p <span class="token operator">=</span> p<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        now<span class="token operator">--</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> p<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>快慢指针</p></blockquote> <p>解题思路
+依旧还是使用快慢指针，让快指针先走k步，然后快慢指针开始同速前进
+当快指针走到链表末尾null时，慢指针所在的位置就是倒数第k个链表节点
+下面的代码使用了虚拟哨兵节点，可以简化很多非空代码的判定，这是链表通用套路，不信你可以对比一下看最下面代码实现，就可以看出简洁性
+实现代码</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> <span class="token function-variable function">getKthFromEnd</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">head<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 虚拟哨兵节点</span>
+  <span class="token keyword">let</span> dummyNode <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  dummyNode<span class="token punctuation">.</span>next <span class="token operator">=</span> head<span class="token punctuation">;</span>
+  <span class="token comment">// 快慢指针</span>
+  <span class="token keyword">let</span> fast <span class="token operator">=</span> dummyNode<span class="token punctuation">,</span>
+slow <span class="token operator">=</span> dummyNode<span class="token punctuation">;</span>
+  <span class="token comment">// 快指针先向前走k步</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>fast <span class="token operator">&amp;&amp;</span> k<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+fast <span class="token operator">=</span> fast<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+k<span class="token operator">--</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 快慢指针同步向前走，当快指针走到链表末尾的时候，慢指针刚好在链表倒数第K个节点</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>fast<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+fast <span class="token operator">=</span> fast<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+slow <span class="token operator">=</span> slow<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> slow<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-25-合并两个排序的链表"><a href="#剑指-offer-25-合并两个排序的链表" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/he-bing-liang-ge-pai-xu-de-lian-biao-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 25. 合并两个排序的链表<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {ListNode} l1
+ * @param {ListNode} l2
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">mergeTwoLists</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">l1<span class="token punctuation">,</span> l2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> l3 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">ListNode</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span>
+  <span class="token keyword">let</span> p3 <span class="token operator">=</span> l3
+  <span class="token keyword">let</span> <span class="token punctuation">[</span>p1<span class="token punctuation">,</span> p2<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>l1<span class="token punctuation">,</span> l2<span class="token punctuation">]</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>p1 <span class="token operator">&amp;&amp;</span> p2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>p1<span class="token punctuation">.</span>val <span class="token operator">&lt;</span> p2<span class="token punctuation">.</span>val<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      p3<span class="token punctuation">.</span>next <span class="token operator">=</span> p1
+      p1 <span class="token operator">=</span> p1<span class="token punctuation">.</span>next
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      p3<span class="token punctuation">.</span>next <span class="token operator">=</span> p2
+      p2 <span class="token operator">=</span> p2<span class="token punctuation">.</span>next
+    <span class="token punctuation">}</span>
+    p3 <span class="token operator">=</span> p3<span class="token punctuation">.</span>next
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>p1<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p3<span class="token punctuation">.</span>next <span class="token operator">=</span> p1
+  <span class="token punctuation">}</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>p2<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    p3<span class="token punctuation">.</span>next <span class="token operator">=</span> p2
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> l3<span class="token punctuation">.</span>next
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="剑指-offer-52-两个链表的第一个公共节点"><a href="#剑指-offer-52-两个链表的第一个公共节点" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/liang-ge-lian-biao-de-di-yi-ge-gong-gong-jie-dian-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 52. 两个链表的第一个公共节点<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-bash extra-class"><pre class="language-bash"><code>我走一遍我的路程，再走一遍你的路程
+由于路程一样，我们一定会在旅途中的某点<span class="token punctuation">(</span>相交点<span class="token punctuation">)</span>相遇
+如果没有在路中相遇，我们最终也会在各自路程末端的 null 相遇
+
+
+说人话就是：
+
+假设 headA 总长度是 lengthA，headB 总长度是 lengthB
+然后用 pA 在 headA 开始遍历，pB 在 headB 开始遍历
+让 pA 和 pB 总共走的路程都是 lengthA + lengthB
+由于路程相等，所以他们肯定会同时走完，同时到 null
+如果有相交的结点，他们就会在走完之前同时相遇，此时返回结果即可
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for singly-linked list.
+ * function ListNode(val) {
+ *     this.val = val;
+ *     this.next = null;
+ * }
+ */</span>
+
+<span class="token comment">/**
+ * @param {ListNode} headA
+ * @param {ListNode} headB
+ * @return {ListNode}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">getIntersectionNode</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">headA<span class="token punctuation">,</span> headB</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>headA <span class="token operator">||</span> <span class="token operator">!</span>headB<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> pA <span class="token operator">=</span> headA<span class="token punctuation">,</span> pB <span class="token operator">=</span> headB<span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>pA <span class="token operator">!==</span> pB<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        pA <span class="token operator">=</span> pA <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">?</span> headB <span class="token operator">:</span> pA<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+        pB <span class="token operator">=</span> pB <span class="token operator">===</span> <span class="token keyword">null</span> <span class="token operator">?</span> headA <span class="token operator">:</span> pB<span class="token punctuation">.</span>next<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> pA<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="调整数组顺序使奇数位于偶数前面"><a href="#调整数组顺序使奇数位于偶数前面" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/diao-zheng-shu-zu-shun-xu-shi-qi-shu-wei-yu-ou-shu-qian-mian-lcof/" target="_blank" rel="noopener noreferrer">调整数组顺序使奇数位于偶数前面<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-js extra-class"><pre class="language-js"><code>输入一个整数数组，实现一个函数来调整该数组中数字的顺序，使得所有奇数在数组的前半部分，所有偶数在数组的后半部分。
+
+ 
+
+示例：
+
+输入：nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span>
+输出：<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span> 
+注：<span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">4</span><span class="token punctuation">]</span> 也是正确的答案之一。
+</code></pre></div><blockquote><p>使用api</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">exchange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">return</span> nums<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span>b</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span>b<span class="token operator">%</span><span class="token number">2</span><span class="token operator">-</span>a<span class="token operator">%</span><span class="token number">2</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>双指针</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */</span>
+<span class="token comment">/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">exchange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">.</span>length<span class="token operator">&lt;</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">return</span> nums<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">let</span> p<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> c<span class="token operator">=</span>nums<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>p <span class="token operator">!==</span> c<span class="token punctuation">)</span><span class="token punctuation">{</span> 
+        <span class="token keyword">if</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span>p<span class="token punctuation">]</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">let</span> temp <span class="token operator">=</span> nums<span class="token punctuation">[</span>p<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            nums<span class="token punctuation">[</span>p<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>c<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            nums<span class="token punctuation">[</span>c<span class="token punctuation">]</span> <span class="token operator">=</span> temp<span class="token punctuation">;</span>
+            c<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            p<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> nums<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><blockquote><p>双指针</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">exchange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> right <span class="token operator">=</span> nums<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>left <span class="token operator">&lt;</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>left<span class="token operator">&lt;</span> right <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>  left<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>left <span class="token operator">&lt;</span> right <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>  right<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token function">swap</span><span class="token punctuation">(</span>nums<span class="token punctuation">,</span> left<span class="token punctuation">,</span> right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> nums<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">swap</span><span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> i<span class="token punctuation">,</span> j</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> temp <span class="token operator">=</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+    nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> 
+    nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> temp
+<span class="token punctuation">}</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">exchange</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> right <span class="token operator">=</span> nums<span class="token punctuation">.</span>length<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>left <span class="token operator">&lt;</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>left<span class="token operator">&lt;</span> right <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span>  left<span class="token operator">++</span><span class="token punctuation">;</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>left <span class="token operator">&lt;</span> right <span class="token operator">&amp;&amp;</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span> <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span>  right<span class="token operator">--</span><span class="token punctuation">;</span>
+        <span class="token punctuation">[</span>nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">,</span>nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">,</span>nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> nums<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-57-和为s的两个数字"><a href="#剑指-offer-57-和为s的两个数字" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/he-wei-sde-liang-ge-shu-zi-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 57. 和为s的两个数字<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-bash extra-class"><pre class="language-bash"><code>输入一个递增排序的数组和一个数字s，在数组中查找两个数，使得它们的和正好是s。如果有多对数字的和等于s，则输出任意一对即可。
+
+ 
+
+示例 <span class="token number">1</span>：
+
+输入：nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2,7</span>,11,15<span class="token punctuation">]</span>, target <span class="token operator">=</span> <span class="token number">9</span>
+输出：<span class="token punctuation">[</span><span class="token number">2,7</span><span class="token punctuation">]</span> 或者 <span class="token punctuation">[</span><span class="token number">7,2</span><span class="token punctuation">]</span>
+示例 <span class="token number">2</span>：
+
+输入：nums <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">10,26</span>,30,31,47,60<span class="token punctuation">]</span>, target <span class="token operator">=</span> <span class="token number">40</span>
+输出：<span class="token punctuation">[</span><span class="token number">10,30</span><span class="token punctuation">]</span> 或者 <span class="token punctuation">[</span><span class="token number">30,10</span><span class="token punctuation">]</span>
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>解题思路:
+
+左指针指向数组左边头部，右指针指和数组右边尾部
+左右指针相遇后即退出循环
+如果俩指针指向的元素和与target相等，那么就是我们要找的结果
+如果比target小，那么让左指针往后移，因为这是一个递增数组，往后移俩指针相加的元素和就会增大
+同理，如果比target大，那么就让右指针往左移
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>
+<span class="token comment">/**
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">twoSum</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">nums<span class="token punctuation">,</span> target</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>nums <span class="token operator">==</span> <span class="token keyword">null</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    right <span class="token operator">=</span> nums<span class="token punctuation">.</span>length <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  <span class="token keyword">while</span> <span class="token punctuation">(</span>left <span class="token operator">&lt;=</span> right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> sum <span class="token operator">=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">+</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>sum <span class="token operator">==</span> target<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span>nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>sum <span class="token operator">&lt;</span> target<span class="token punctuation">)</span> left<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> right<span class="token operator">--</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-58-i-翻转单词顺序"><a href="#剑指-offer-58-i-翻转单词顺序" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/fan-zhuan-dan-ci-shun-xu-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 58 - I. 翻转单词顺序<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-bash extra-class"><pre class="language-bash"><code>输入一个英文句子，翻转句子中单词的顺序，但单词内字符的顺序不变。为简单起见，标点符号和普通字母一样处理。例如输入字符串<span class="token string">&quot;I am a student. &quot;</span>，则输出<span class="token string">&quot;student. a am I&quot;</span>。
+
+ 
+
+示例 <span class="token number">1</span>：
+
+输入: <span class="token string">&quot;the sky is blue&quot;</span>
+输出: <span class="token string">&quot;blue is sky the&quot;</span>
+示例 <span class="token number">2</span>：
+
+输入: <span class="token string">&quot;  hello world!  &quot;</span>
+输出: <span class="token string">&quot;world! hello&quot;</span>
+解释: 输入字符串可以在前面或者后面包含多余的空格，但是反转后的字符不能包括。
+示例 <span class="token number">3</span>：
+
+输入: <span class="token string">&quot;a good   example&quot;</span>
+输出: <span class="token string">&quot;example good a&quot;</span>
+解释: 如果两个单词间有多余的空格，将反转后单词间的空格减少到只含一个。
+</code></pre></div><div class="language-bash extra-class"><pre class="language-bash"><code>解题思路
+双指针
+通过双指针解决，i 指针在 j 指针前面，i 指针指向每个单词的开头，j 指针指向每个单词的末尾的空格
+
+步骤
+先对字符串进行前面和后面的多余空格去除.
+然后 i 和 j 指针重置为0后
+j 指针向后遍历直到找到第一个空格位置，此时 i 指针 和 j 指针的区间内就是一个单词
+将该单词用数组存起来，由于是翻转单词顺序，所以 unshift<span class="token punctuation">(</span><span class="token punctuation">)</span> 移到数组头部
+存完单词，j指针向后移动，直到找到下一个单词的第一个字符
+最后遍历完，用数组的 join<span class="token punctuation">(</span><span class="token punctuation">)</span> 方法返回即可，拼接成字符串且连接处用空格
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {string} s
+ * @return {string}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">reverseWords</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">s</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> len <span class="token operator">=</span> s<span class="token punctuation">.</span>length<span class="token punctuation">,</span> j <span class="token operator">=</span> len <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token comment">// 先去除字符串前面或后面的多余空格</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">' '</span><span class="token punctuation">)</span>
+        i<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">' '</span><span class="token punctuation">)</span>
+        j<span class="token operator">--</span><span class="token punctuation">;</span>
+    s <span class="token operator">=</span> s<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> j <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+    i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token keyword">while</span><span class="token punctuation">(</span>j <span class="token operator">&lt;</span> len<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// j 指针找到第一个空格为止</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>j <span class="token operator">&lt;</span> len <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">!==</span> <span class="token string">' '</span><span class="token punctuation">)</span>
+            j<span class="token operator">++</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">.</span><span class="token function">unshift</span><span class="token punctuation">(</span>s<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> j<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// j 指针找到第一个非空格字符为止</span>
+        <span class="token keyword">while</span><span class="token punctuation">(</span>j <span class="token operator">&lt;</span> len <span class="token operator">&amp;&amp;</span> s<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">===</span> <span class="token string">' '</span><span class="token punctuation">)</span>
+            j<span class="token operator">++</span><span class="token punctuation">;</span>
+        i <span class="token operator">=</span> j<span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> arr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-34-二叉树中和为某一值的路径"><a href="#剑指-offer-34-二叉树中和为某一值的路径" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/er-cha-shu-zhong-he-wei-mou-yi-zhi-de-lu-jing-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 34. 二叉树中和为某一值的路径<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-bash extra-class"><pre class="language-bash"><code>给你二叉树的根节点 root 和一个整数目标和 targetSum ，找出所有 从根节点到叶子节点 路径总和等于给定目标和的路径。
+
+叶子节点 是指没有子节点的节点。
+</code></pre></div><p><img src="http://r9cclbbs3.hn-bkt.clouddn.com/20220308232909.jpeg" alt="img"></p> <div class="language-bash extra-class"><pre class="language-bash"><code>输入：root <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5,4</span>,8,11,null,13,4,7,2,null,null,5,1<span class="token punctuation">]</span>, targetSum <span class="token operator">=</span> <span class="token number">22</span>
+输出：<span class="token punctuation">[</span><span class="token punctuation">[</span><span class="token number">5,4</span>,11,2<span class="token punctuation">]</span>,<span class="token punctuation">[</span><span class="token number">5,8</span>,4,5<span class="token punctuation">]</span><span class="token punctuation">]</span>
+</code></pre></div><p><img src="http://r9cclbbs3.hn-bkt.clouddn.com/20220308232843.jpeg" alt="img"></p> <div class="language-js extra-class"><pre class="language-js"><code>输入：root <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span><span class="token punctuation">,</span> targetSum <span class="token operator">=</span> <span class="token number">5</span>
+输出：<span class="token punctuation">[</span><span class="token punctuation">]</span>
+示例 <span class="token number">3</span>：
+
+输入：root <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> targetSum <span class="token operator">=</span> <span class="token number">0</span>
+输出：<span class="token punctuation">[</span><span class="token punctuation">]</span>
+</code></pre></div><blockquote><p>思路 深度优先遍历</p></blockquote> <p>每层都三个参数，一个是当前结点，一个是 target 剩余值，一个是总路径数组
+当往二叉树深处进行遍历时，如果 target 剩余值跟结点值相等且左右子树为空(叶子结点)，则满足要求，往 result 压入当前总路径数组 path
+对于左右子树不为空的结点，继续往左或右子树进行遍历，直到叶子结点</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for a binary tree node.
+ * function TreeNode(val, left, right) {
+ *     this.val = (val===undefined ? 0 : val)
+ *     this.left = (left===undefined ? null : left)
+ *     this.right = (right===undefined ? null : right)
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {TreeNode} root
+ * @param {number} target
+ * @return {number[][]}
+ */</span>
+
+<span class="token keyword">var</span> <span class="token function-variable function">pathSum</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">root<span class="token punctuation">,</span> sum</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> <span class="token function-variable function">dfs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">root<span class="token punctuation">,</span> sum<span class="token punctuation">,</span> path</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+      <span class="token comment">// 到了叶子节点并且当前节点的值跟剩余sum相等，则推入结果集中</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>root<span class="token punctuation">.</span>val <span class="token operator">===</span> sum <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>root<span class="token punctuation">.</span>left <span class="token operator">&amp;&amp;</span> <span class="token operator">!</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        res<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+      <span class="token comment">// 路径中加入当前节点的值</span>
+      path<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">dfs</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">,</span> sum <span class="token operator">-</span> root<span class="token punctuation">.</span>val<span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token function">dfs</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">,</span> sum <span class="token operator">-</span> root<span class="token punctuation">.</span>val<span class="token punctuation">,</span> path<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    
+    <span class="token function">dfs</span><span class="token punctuation">(</span>root<span class="token punctuation">,</span> sum<span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> res<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-36-二叉搜索树与双向链表"><a href="#剑指-offer-36-二叉搜索树与双向链表" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-yu-shuang-xiang-lian-biao-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 36. 二叉搜索树与双向链表<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <p>输入一棵二叉搜索树，将该二叉搜索树转换成一个排序的循环双向链表。要求不能创建任何新的节点，只能调整树中节点指针的指向。</p> <p>为了让您更好地理解问题，以下面的二叉搜索树为例：</p> <p><img src="http://r9cclbbs3.hn-bkt.clouddn.com/20220308233438.png" alt="img"></p> <p>我们希望将这个二叉搜索树转化为双向循环链表。链表中的每个节点都有一个前驱和后继指针。对于双向循环链表，第一个节点的前驱是最后一个节点，最后一个节点的后继是第一个节点。</p> <p>下图展示了上面的二叉搜索树转化成的链表。“head” 表示指向链表中有最小元素的节点。</p> <p><img src="http://r9cclbbs3.hn-bkt.clouddn.com/20220308233339.png" alt="img"></p> <p>特别地，我们希望可以就地完成转换操作。当转化完成以后，树中节点的左指针需要指向前驱，树中节点的右指针需要指向后继。还需要返回链表中的第一个节点的指针。</p> <blockquote><p>解题思路</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code>中序遍历 + 回溯
+本文解法基于性质：二叉搜索树的中序遍历为 递增序列 。
+将 二叉搜索树 转换成一个 “排序的循环双向链表”
+
+考虑使用 中序遍历 访问树的各节点 cur ；并在访问每个节点时构建 cur 和前驱节点 pre 的引用指向；中序遍历完成后，最后构建头节点和尾节点的引用指向即可。
+
+中序遍历
+
+dfs<span class="token punctuation">(</span>root.left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+console.log<span class="token punctuation">(</span>root.val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+dfs<span class="token punctuation">(</span>root.right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+算法流程：
+dfs<span class="token punctuation">(</span>cur<span class="token punctuation">)</span>: 递归法中序遍历；
+
+终止条件： 当节点 cur 为空，代表越过叶节点，直接返回；
+递归左子树，即 dfs<span class="token punctuation">(</span>cur.left<span class="token punctuation">)</span> ；
+构建链表：
+当 pre 为空时： 代表正在访问链表头节点，记为 <span class="token function">head</span> ；
+当 pre 不为空时： 修改双向节点引用，即 pre.right <span class="token operator">=</span> cur ， cur.left <span class="token operator">=</span> pre ；
+保存 cur ： 把 pre 指针移回 cur，然后继续遍历右子树去了
+递归右子树，即 dfs<span class="token punctuation">(</span>cur.right<span class="token punctuation">)</span> ；
+最后，再将链表头部 <span class="token function">head</span> 和尾部 pre 修改一下彼此的双向指向即可
+head.left <span class="token operator">=</span> pre<span class="token punctuation">;</span>
+pre.right <span class="token operator">=</span> <span class="token function">head</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>代码</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * // Definition for a Node.
+ * function Node(val,left,right) {
+ *    this.val = val;
+ *    this.left = left;
+ *    this.right = right;
+ * };
+ */</span>
+<span class="token comment">/**
+ * @param {Node} root
+ * @return {Node}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">treeToDoublyList</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token keyword">let</span> pre<span class="token punctuation">,</span> head<span class="token punctuation">;</span>
+    <span class="token keyword">const</span> <span class="token function-variable function">dfs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">cur</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>cur<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token comment">// 中序遍历，先递归左子树</span>
+        <span class="token function">dfs</span><span class="token punctuation">(</span>cur<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token comment">// 如果前置指针空了，那么是头结点</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>pre<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            head <span class="token operator">=</span> cur<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+            pre<span class="token punctuation">.</span>right <span class="token operator">=</span> cur<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token comment">// cur 的前置指针指向 pre</span>
+        cur<span class="token punctuation">.</span>left <span class="token operator">=</span> pre<span class="token punctuation">;</span>
+        <span class="token comment">// 遍历完，把 pre 指针移回 cur，然后继续遍历右子树去了</span>
+        pre <span class="token operator">=</span> cur<span class="token punctuation">;</span>
+        <span class="token function">dfs</span><span class="token punctuation">(</span>cur<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token function">dfs</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    head<span class="token punctuation">.</span>left <span class="token operator">=</span> pre<span class="token punctuation">;</span>
+    pre<span class="token punctuation">.</span>right <span class="token operator">=</span> head<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> head<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-54-二叉搜索树的第k大节点"><a href="#剑指-offer-54-二叉搜索树的第k大节点" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 54. 二叉搜索树的第k大节点<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-bash extra-class"><pre class="language-bash"><code>给定一棵二叉搜索树，请找出其中第 k 大的节点的值。
+
+ 
+
+示例 <span class="token number">1</span>:
+
+输入: root <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3,1</span>,4,null,2<span class="token punctuation">]</span>, k <span class="token operator">=</span> <span class="token number">1</span>
+   <span class="token number">3</span>
+  / <span class="token punctuation">\</span>
+ <span class="token number">1</span>   <span class="token number">4</span>
+  <span class="token punctuation">\</span>
+   <span class="token number">2</span>
+输出: <span class="token number">4</span>
+示例 <span class="token number">2</span>:
+
+输入: root <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">5,3</span>,6,2,4,null,null,1<span class="token punctuation">]</span>, k <span class="token operator">=</span> <span class="token number">3</span>
+       <span class="token number">5</span>
+      / <span class="token punctuation">\</span>
+     <span class="token number">3</span>   <span class="token number">6</span>
+    / <span class="token punctuation">\</span>
+   <span class="token number">2</span>   <span class="token number">4</span>
+  /
+ <span class="token number">1</span>
+输出: <span class="token number">4</span>
+</code></pre></div><blockquote><p>中序遍历</p></blockquote> <p>利用二叉搜索树中序遍历是递增数组的特性，在得出中序遍历对应的递增数组后，直接返回数组中第 <code>arr.length - k</code> 位数字即可</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * Definition for a binary tree node.
+ * function TreeNode(val) {
+ *     this.val = val;
+ *     this.left = this.right = null;
+ * }
+ */</span>
+<span class="token comment">/**
+ * @param {TreeNode} root
+ * @param {number} k
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">kthLargest</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token parameter">root<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token function-variable function">mid</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span><span class="token punctuation">;</span>
+        <span class="token function">mid</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        arr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token function">mid</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">let</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token function">mid</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">return</span> arr<span class="token punctuation">[</span>arr<span class="token punctuation">.</span>length <span class="token operator">-</span> k<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><blockquote><p>解题思路2
+题目说了是一个二叉搜索树，所以中序遍历是一个递增序列
+但题目要求求第k大节点的值
+我们当然不能把所有节点都遍历完，知道总数sum后减去k，再中序遍历第sum-k小的数字，这样太麻烦了
+反过来想，我们先遍历右节点，再遍历当前节点，再遍历左节点，是不是就是一个递减序号</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {TreeNode} root
+ * @param {number} k
+ * @return {number}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">kthLargest</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">root<span class="token punctuation">,</span> k</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> node<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span> node<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> <span class="token function-variable function">dfs</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>root<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+    <span class="token function">dfs</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>right<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    k<span class="token operator">--</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>k<span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token punctuation">(</span>node <span class="token operator">=</span> root<span class="token punctuation">.</span>val<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">dfs</span><span class="token punctuation">(</span>root<span class="token punctuation">.</span>left<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token function">dfs</span><span class="token punctuation">(</span>root<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> node<span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+</code></pre></div><h3 id="剑指-offer-45-把数组排成最小的数"><a href="#剑指-offer-45-把数组排成最小的数" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/ba-shu-zu-pai-cheng-zui-xiao-de-shu-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 45. 把数组排成最小的数<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-bash extra-class"><pre class="language-bash"><code>输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
+
+ 
+
+示例 <span class="token number">1</span>:
+
+输入: <span class="token punctuation">[</span><span class="token number">10,2</span><span class="token punctuation">]</span>
+输出: <span class="token string">&quot;102&quot;</span>
+示例 <span class="token number">2</span>:
+
+输入: <span class="token punctuation">[</span><span class="token number">3,30</span>,34,5,9<span class="token punctuation">]</span>
+输出: <span class="token string">&quot;3033459&quot;</span>
+ 
+
+提示:
+
+<span class="token number">0</span> <span class="token operator">&lt;</span> nums.length <span class="token operator">&lt;=</span> <span class="token number">100</span>
+</code></pre></div><blockquote><p>思路</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>我们最终要达到的效果是把数组里所有数字拼接起来排成一个数，并且这个数是拼接的所有数字中最小的
+<span class="token function">利用分治的思想，如果这个数组只有两个数字，那这两个数字</span><span class="token punctuation">(</span>假设这俩数字叫a b<span class="token punctuation">)</span>拼接的规则无非是ab或者ba，那么我们比较这俩拼接结果哪个小我们就采用哪个
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {string}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">minNumber</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> nums<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>a<span class="token interpolation-punctuation punctuation">}</span></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>b<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span> <span class="token operator">-</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>b<span class="token interpolation-punctuation punctuation">}</span></span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>a<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="剑指-offer-61-扑克牌中的顺子"><a href="#剑指-offer-61-扑克牌中的顺子" class="header-anchor">#</a> <a href="https://leetcode-cn.com/problems/bu-ke-pai-zhong-de-shun-zi-lcof/" target="_blank" rel="noopener noreferrer">剑指 Offer 61. 扑克牌中的顺子<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h3> <div class="language-bash extra-class"><pre class="language-bash"><code>从若干副扑克牌中随机抽 <span class="token number">5</span> 张牌，判断是不是一个顺子，即这5张牌是不是连续的。2～10为数字本身，A为1，J为11，Q为12，K为13，而大、小王为 <span class="token number">0</span> ，可以看成任意数字。A 不能视为 <span class="token number">14</span>。
+
+ 
+
+示例 <span class="token number">1</span>:
+
+输入: <span class="token punctuation">[</span><span class="token number">1,2</span>,3,4,5<span class="token punctuation">]</span>
+输出: True
+ 
+
+示例 <span class="token number">2</span>:
+
+输入: <span class="token punctuation">[</span><span class="token number">0,0</span>,1,2,5<span class="token punctuation">]</span>
+输出: True
+ 
+
+限制：
+
+数组长度为 <span class="token number">5</span> 
+
+数组的数取值为 <span class="token punctuation">[</span><span class="token number">0</span>, <span class="token number">13</span><span class="token punctuation">]</span> <span class="token builtin class-name">.</span>
+</code></pre></div><p>解题思路
+先看下题目给的示例：[0,0,1,2,5]，为什么这个能够成顺子，因为0代表大小王，可以当作顺子中的任何一个缺少的数字
+所以规则本质上就是，除大小王之外，顺子中的最大值和最小值之间的差值不会超过5（准确点来说是差值最大为4，比方说：[1,2,3,4,5]）
+为什么题解中是&lt;5而不是==4呢？举例来说[11,0,9,0,0],这个的最小值是9，最大值是11，差值是2，但是却依然是顺子，所以最大值和最小值之间的差值不会小于5
+众所周知顺子中不能出现重复的牌，如果出现重复的牌肯定不是顺子
+代码实现1是用Map来存已经存在过的数字，方便去重判断</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">isStraight</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Set</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> max <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span>
+    min <span class="token operator">=</span> <span class="token number">14</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> a <span class="token keyword">of</span> nums<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 跳过大小王;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>a <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token keyword">continue</span><span class="token punctuation">;</span>
+    max <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">max</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> max<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    min <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">min</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> min<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token comment">// 若有重复，提前返回 false</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>set<span class="token punctuation">.</span><span class="token function">has</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    set<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// 最大牌 - 最小牌 &lt; 5 则可构成顺子</span>
+  <span class="token keyword">return</span> max <span class="token operator">-</span> min <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><p>代码实现2是先排序，这样的话，重复的数字就一定会相邻，这样也方便去重判断</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/**
+ * @param {number[]} nums
+ * @return {boolean}
+ */</span>
+<span class="token keyword">var</span> <span class="token function-variable function">isStraight</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">nums</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> kingsCount <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  nums<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">a<span class="token punctuation">,</span> b</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> a <span class="token operator">-</span> b<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">let</span> numsCount <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> numsCount <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span> kingsCount<span class="token operator">++</span><span class="token punctuation">;</span>
+    <span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> nums<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token comment">// kingsCount这时候已经指向0后面的数字了</span>
+  <span class="token keyword">return</span> nums<span class="token punctuation">[</span><span class="token number">4</span><span class="token punctuation">]</span> <span class="token operator">-</span> nums<span class="token punctuation">[</span>kingsCount<span class="token punctuation">]</span> <span class="token operator">&lt;</span> <span class="token number">5</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev"><a href="/Front-end-notes/handbook/DoExercises.html" class="prev">
+            🐋leetCode刷题1
+          </a></span> <span class="next"><a href="/Front-end-notes/handbook/ReviewNodeJS.html">
+            ⏲小浪复习NodeJS框架
+          </a></span></p></div> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-2" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指offer" class="sidebar-link reco-side-剑指offer" data-v-cb1513f6>剑指Offer</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-42-连续子数组的最大和" class="sidebar-link reco-side-剑指-offer-42-连续子数组的最大和" data-v-cb1513f6>剑指 Offer 42. 连续子数组的最大和</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-47-礼物的最大价值" class="sidebar-link reco-side-剑指-offer-47-礼物的最大价值" data-v-cb1513f6>剑指 Offer 47. 礼物的最大价值</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-46-把数字翻译成字符串" class="sidebar-link reco-side-剑指-offer-46-把数字翻译成字符串" data-v-cb1513f6>剑指 Offer 46. 把数字翻译成字符串</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-48-最长不含重复字符的子字符串" class="sidebar-link reco-side-剑指-offer-48-最长不含重复字符的子字符串" data-v-cb1513f6>剑指 Offer 48. 最长不含重复字符的子字符串</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-18-删除链表的节点" class="sidebar-link reco-side-剑指-offer-18-删除链表的节点" data-v-cb1513f6>剑指 Offer 18. 删除链表的节点</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-22-链表中倒数第k个节点" class="sidebar-link reco-side-剑指-offer-22-链表中倒数第k个节点" data-v-cb1513f6>剑指 Offer 22. 链表中倒数第k个节点</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-25-合并两个排序的链表" class="sidebar-link reco-side-剑指-offer-25-合并两个排序的链表" data-v-cb1513f6>剑指 Offer 25. 合并两个排序的链表</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-52-两个链表的第一个公共节点" class="sidebar-link reco-side-剑指-offer-52-两个链表的第一个公共节点" data-v-cb1513f6>剑指 Offer 52. 两个链表的第一个公共节点</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#调整数组顺序使奇数位于偶数前面" class="sidebar-link reco-side-调整数组顺序使奇数位于偶数前面" data-v-cb1513f6>调整数组顺序使奇数位于偶数前面</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-57-和为s的两个数字" class="sidebar-link reco-side-剑指-offer-57-和为s的两个数字" data-v-cb1513f6>剑指 Offer 57. 和为s的两个数字</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-58-i-翻转单词顺序" class="sidebar-link reco-side-剑指-offer-58-i-翻转单词顺序" data-v-cb1513f6>剑指 Offer 58 - I. 翻转单词顺序</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-34-二叉树中和为某一值的路径" class="sidebar-link reco-side-剑指-offer-34-二叉树中和为某一值的路径" data-v-cb1513f6>剑指 Offer 34. 二叉树中和为某一值的路径</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-36-二叉搜索树与双向链表" class="sidebar-link reco-side-剑指-offer-36-二叉搜索树与双向链表" data-v-cb1513f6>剑指 Offer 36. 二叉搜索树与双向链表</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-54-二叉搜索树的第k大节点" class="sidebar-link reco-side-剑指-offer-54-二叉搜索树的第k大节点" data-v-cb1513f6>剑指 Offer 54. 二叉搜索树的第k大节点</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-45-把数组排成最小的数" class="sidebar-link reco-side-剑指-offer-45-把数组排成最小的数" data-v-cb1513f6>剑指 Offer 45. 把数组排成最小的数</a></li><li class="level-3" data-v-cb1513f6><a href="/Front-end-notes/handbook/DoExercises1.html#剑指-offer-61-扑克牌中的顺子" class="sidebar-link reco-side-剑指-offer-61-扑克牌中的顺子" data-v-cb1513f6>剑指 Offer 61. 扑克牌中的顺子</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div></div></div>
+    <script src="/Front-end-notes/assets/js/app.fce70604.js" defer></script><script src="/Front-end-notes/assets/js/3.b45189e7.js" defer></script><script src="/Front-end-notes/assets/js/1.62c193a0.js" defer></script><script src="/Front-end-notes/assets/js/32.391c87a8.js" defer></script>
+  </body>
+</html>
